@@ -14,7 +14,7 @@ import nicelee.bilibili.threads.ThRecord;
 
 public class Main {
 
-	final static String version = "v2.18.0";
+	final static String version = "v0.0.7";
 	public static Thread thRecord;
 	public static Thread thMonitor;
 	public static Thread thCommand;
@@ -59,12 +59,12 @@ public class Main {
 				e.printStackTrace();
 			}
 		}
-		System.out.println(Config.liver + " 直播录制 version " + version);
+		System.out.println(" 红叔直播录制 版本: " + version);
 
 		// 如果没有传入房间号，等待输入房间号
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 		if (Config.shortId == null) {
-			System.out.println("请输入房间号(直播网址是https://xxx.com/xxx，那么房间号就是xxx)");
+			System.out.println("输房间号");
 			String line = reader.readLine();
 			Config.shortId = line;
 		}
